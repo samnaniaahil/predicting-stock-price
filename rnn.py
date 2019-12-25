@@ -1,5 +1,4 @@
 # Recurrent Neural Networks
-
 # Part 1 - Data Preprocessing
 
 # Importing necessary libraries
@@ -31,7 +30,6 @@ X_train, y_train = np.array(X_train), np.array(y_train)
 
 # Reshaping X_train for it to be accepted as input for RNN
 X_train = np.reshape(X_train, (X_train.shape[0], X_train.shape[1], 1))
-
 
 # Part 2 - Building the RNN
 
@@ -72,7 +70,6 @@ regressor.compile(optimizer = 'adam', loss = 'mean_squared_error')
 
 # Fitting the RNN to the Training set
 regressor.fit(X_train, y_train, epochs = 100, batch_size = 32)
-
 
 # Part 3 - Making predictions and visualising results
 
